@@ -33,7 +33,7 @@ st.title("AI Mood Detector 🧠😊")
 option = st.radio("Choose Input Type", ['Text', 'Image'])
 
 if option == 'Text':
-    user_text = st.text_input("Have fallen for u drlg")
+    user_text = st.text_input("happy to see u again")
     if user_text:
         emotion = detect_text_emotion(user_text.lower())
         st.write(f"Detected Emotion: **{emotion}** {emotion_emoji.get(emotion, '')}")
